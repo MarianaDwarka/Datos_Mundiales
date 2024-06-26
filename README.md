@@ -6,14 +6,16 @@
 El problema o área de interés que se abordará en este proyecto de analytics es la integración y análisis de datos globales que permitan extraer conclusiones significativas sobre demografía, economía y diversidad lingüística. 
 Al tener una base de datos estructurada y realizar consultas específicas, se busca obtener una visión detallada y comprensiva de estos aspectos a nivel mundial.
 
-### Objetivos del Proyecto
+### Descripción del Proyecto
 
-El proyecto persigue varios objetivos específicos. 
-En primer lugar, se busca crear una base de datos que contenga información relevante sobre ciudades, países e idiomas. Esto incluirá la definición de los esquemas de las tablas y la importación de datos en un entorno de nube (Azure SQL Server) y un entorno local (MySQL Workbench).
+El proyecto "Datos Mundiales" se desarrollará en tres partes principales. La primera parte se enfocará en la creación y carga de la base de datos. La base de datos, denominada `world`, consta de tres tablas: `city`, `country` y `countrylanguage`. La creación de la base de datos incluirá la definición de los esquemas y las relaciones entre las tablas. Se implementará en dos entornos distintos: en la nube utilizando Azure SQL Server y de manera local utilizando MySQL Workbench. Una vez creadas las tablas, se procederá a importar los datos correspondientes.
 
-En segundo lugar, el objetivo es establecer una conexión eficiente con la base de datos utilizando Python y realizar consultas SQL que respondan a preguntas específicas sobre los datos. Para conectar y manipular los datos desde Python, se emplearon las bibliotecas `sqlalchemy` para Azure SQL Server y `mysql-connector-python` para MySQL Workbench. Adicionalmente, se utilizaron DataFrames de Pandas para realizar manipulaciones y análisis de datos. Las técnicas de análisis incluyeron consultas SQL para extraer datos relevantes y el uso de Pandas para analizar estos datos.
+En la segunda parte del proyecto, se establecerá una conexión con la base de datos utilizando Python. Para conectarse con Azure SQL Server, se empleará la biblioteca `sqlalchemy`, mientras que para MySQL Workbench se utilizará `mysql-connector-python`. Desde Python, se realizarán consultas SQL para responder a preguntas específicas sobre los datos, también se contestarán las mismas preguntas utilizando DataFrames de Pandas. Entre las consultas posibles se incluyen los nombres y las áreas de superficie de los cinco países más grandes del mundo, la población total de todos los países de cada continente, el nombre de las ciudades y la población de todos los países de Europa, etc.
 
-Finalmente, el tercer objetivo es crear visualizaciones efectivas de los datos utilizando bibliotecas como `matplotlib` y `seaborn`. Estas visualizaciones ayudarán a representar de manera clara y comprensible los resultados obtenidos de las consultas, facilitando la interpretación y el análisis de los datos.
+La tercera parte del proyecto se centrará en la visualización de los datos. Se crearán visualizaciones en Python, se utilizarán bibliotecas como `matplotlib` y `seaborn`, creando gráficos que representen los datos obtenidos de las consultas. Por ejemplo, se podrán generar gráficos de barras para mostrar la población de cada continente o gráficos de pastel para representar el número de países por continente 
+
+El proyecto "Datos Mundiales" abarcará desde la creación y carga de una base de datos hasta la realización de consultas y la visualización de los resultados mediante diversas herramientas.
+
 
 
 ### Conclusiones
